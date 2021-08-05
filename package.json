@@ -1,0 +1,31 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "description": "contact book",
+  "private": true,
+  "browserslist": "> 0.25%, not dead",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "start": "webpack serve --mode development --open"
+  },
+  "keywords": [
+    "contact-book"
+  ],
+  "author": "Pavel Mikhailov <pamix1985@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
