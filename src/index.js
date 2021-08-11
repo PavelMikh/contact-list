@@ -1,16 +1,9 @@
 import './styles/index.scss'
-const greet = 'Hello world'
+import {Router} from './core/routes/Router'
+import {ContactListPage} from './pages/ContactListPage'
+import {ContactPage} from './pages/ContactPage'
 
-console.log(greet)
-
-async function start() {
-  return await Promise.resolve('async is working')
-}
-
-start().then(console.log)
-
-class Util {
-  static id = Date.now()
-}
-
-console.log('Util Id:', Util.id)
+new Router('#app', {
+  list: ContactListPage,
+  contact: ContactPage
+})
